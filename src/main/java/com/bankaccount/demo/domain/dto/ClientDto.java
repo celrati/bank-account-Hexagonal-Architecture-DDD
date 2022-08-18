@@ -1,13 +1,11 @@
-package com.bankaccount.demo.core.dto;
+package com.bankaccount.demo.domain.dto;
 
-import com.bankaccount.demo.core.Transaction;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.util.List;
 
 
 @Data

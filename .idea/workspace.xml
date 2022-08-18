@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d26675c9-884c-4820-8168-00e293ad9cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/application/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/core/dto/ClientDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/dto/ClientDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +74,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660786856358</updated>
-      <workItem from="1660786859192" duration="3733000" />
+      <workItem from="1660786859192" duration="4380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

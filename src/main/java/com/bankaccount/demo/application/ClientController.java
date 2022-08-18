@@ -1,10 +1,8 @@
-package com.bankaccount.demo.controller;
+package com.bankaccount.demo.application;
 
 
-import com.bankaccount.demo.core.dto.ClientDto;
+import com.bankaccount.demo.domain.dto.ClientDto;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/clients")
