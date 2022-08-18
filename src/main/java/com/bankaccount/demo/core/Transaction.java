@@ -14,7 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Transaction {
 
-    private UUID _id;
+    private String id;
     private String clientId;
     private double amount;
 

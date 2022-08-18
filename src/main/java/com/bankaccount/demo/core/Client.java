@@ -16,7 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Client {
 
-    private UUID _id;
+    private String id;
     private String userName;
     private LocalDate birthDate;
     private double balance;
@@ -29,6 +29,10 @@ public class Client {
     public void withdraw(double amount) {
         balance = balance - amount;
 
+    }
+
+    public void getHistory() {
+        System.out.println("test info");
     }
 
 
