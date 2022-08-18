@@ -23,10 +23,11 @@ public class Client {
     private List<Transaction> transactionList;
 
     public void deposit(double amount) {
-
+        balance = balance + amount;
     }
 
     public void withdraw(double amount) {
+        balance = balance - amount;
 
     }
 
