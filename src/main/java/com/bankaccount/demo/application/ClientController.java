@@ -1,13 +1,22 @@
 package com.bankaccount.demo.application;
 
 
+import com.bankaccount.demo.domain.DomainClientService;
 import com.bankaccount.demo.domain.dto.ClientDto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping(name = "/clients", produces = MediaType.APPLICATION_JSON_VALUE)
 public class ClientController {
 
+    private final DomainClientService clientService;
+
+    @Autowired
+    public ClientController(final DomainClientService clientService) {
+        this.clientService = clientService;
+    }
 
     @PostMapping
     String createClient(@RequestBody ClientDto client) {

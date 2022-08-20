@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d26675c9-884c-4820-8168-00e293ad9cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/application/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/application/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/DomainClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/DomainClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/mappers/ClientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/mappers/ClientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/BeanConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -72,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660786856358</updated>
-      <workItem from="1660786859192" duration="8335000" />
+      <workItem from="1660786859192" duration="21769000" />
     </task>
     <servers />
   </component>

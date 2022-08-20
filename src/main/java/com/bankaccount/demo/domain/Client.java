@@ -7,6 +7,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -14,9 +18,13 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Client {
 
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     private String userName;
     private LocalDate birthDate;
     private double balance;
@@ -40,6 +48,7 @@ public class Client {
     public void getHistory() {
         System.out.println("test info");
     }
+
 
 
 }

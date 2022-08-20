@@ -13,7 +13,6 @@ public class ClientMapper {
 
     public Client clientBuild(ClientDto clientDto) {
         return Client.builder()
-                .id(UUID.randomUUID().toString())
                 .userName(clientDto.getUserName())
                 .birthDate(clientDto.getBirthDate())
                 .balance(clientDto.getBalance())
