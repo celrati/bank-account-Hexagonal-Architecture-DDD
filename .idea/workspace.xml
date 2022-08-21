@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d26675c9-884c-4820-8168-00e293ad9cc8" name="Changes" comment="" />
+    <list default="true" id="d26675c9-884c-4820-8168-00e293ad9cc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Transaction.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +62,7 @@
       <recent name="com.bankaccount.demo.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DomainClientServiceTest">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="DomainClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -115,9 +119,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="JUnit.DomainClientServiceTest" />
         <item itemvalue="JUnit.DomainClientServiceTest.createClientTest" />
-        <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="JUnit.DomainClientServiceTest.createClient" />
       </list>
     </recent_temporary>
@@ -130,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660786856358</updated>
-      <workItem from="1660786859192" duration="36470000" />
+      <workItem from="1660786859192" duration="37670000" />
     </task>
     <servers />
   </component>
