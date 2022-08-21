@@ -8,6 +8,7 @@ import com.bankaccount.demo.domain.mappers.ClientMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -18,22 +19,23 @@ public class ClientController {
     private final ClientService clientService;
 
     @PostMapping
-    ClientDto createClient(@RequestBody ClientDto client) {
-        return ClientMapper.clientDtoBuild(clientService.createClient(client));
+    ResponseEntity<ClientDto> createClient(@RequestBody ClientDto client) {
+        return ResponseEntity.ok(ClientMapper.clientDtoBuild(clientService.createClient(client)));
     }
 
     @GetMapping(value = "/{id}")
-    ClientDto getClient(@PathVariable Long id) {
-        return clientService.getClient(id);
+    ResponseEntity<ClientDto> getClient(@PathVariable Long id) {
+        return ResponseEntity.ok(ClientMapper.clientDtoBuild(clientService.getClient(id)));
     }
 
     @GetMapping(value = "/{id}/deposit/{amount}")
-    String depositClient(@PathVariable String id) {
-        return "client : " + id;
+    ResponseEntity<ClientDto> depositClient(@PathVariable Long id, @PathVariable double amount ) {
+        return ResponseEntity.ok(ClientMapper.clientDtoBuild(clientService.depositClient(id, amount)));
+
     }
 
     @GetMapping(value = "/{id}/withdraw/{amount}")
-    String withdrawClient(@PathVariable String id) {
-        return "client : " + id;
+    ResponseEntity<ClientDto> withdrawClient(@PathVariable Long id, @PathVariable double amount ) {
+        return ResponseEntity.ok(ClientMapper.clientDtoBuild(clientService.withdrawClient(id, amount)));
     }
 }

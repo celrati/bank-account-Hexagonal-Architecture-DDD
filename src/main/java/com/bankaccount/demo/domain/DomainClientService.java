@@ -24,13 +24,34 @@ public class DomainClientService implements ClientService {
     }
 
     @Override
-    public ClientDto getClient(Long id) {
-        Optional<Client> client = Optional.ofNullable(clientRepository
+    public Client getClient(Long id) {
+        Optional<Client> client = getClientById(id);
+        return client.get();
+
+    }
+
+    @Override
+    public Client depositClient(Long id, double amount) {
+        Client client = getClientById(id).get();
+        client.setBalance(client.getBalance() + amount);
+        return clientRepository.save(client);
+    }
+
+    @Override
+    public Client withdrawClient(Long id, double amount) {
+        Client client = getClientById(id).get();
+        if(client.getBalance() < amount){
+            throw new RuntimeException("insufficient balance");
+        }
+        client.setBalance(client.getBalance() - amount);
+        return clientRepository.save(client);
+
+    }
+
+    private Optional<Client> getClientById(Long id) {
+        return Optional.ofNullable(clientRepository
                 .findById(id)
                 .orElseThrow(RuntimeException::new));
-
-        return ClientMapper.clientDtoBuild(client.get());
-
     }
 
 }
