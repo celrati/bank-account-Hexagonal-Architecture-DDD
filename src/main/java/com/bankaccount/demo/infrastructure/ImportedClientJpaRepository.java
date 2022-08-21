@@ -1,13 +1,20 @@
 package com.bankaccount.demo.infrastructure;
 
 import com.bankaccount.demo.domain.Client;
+import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 
 public interface ImportedClientJpaRepository extends JpaRepository<Client, Long> {
 
-    Optional<Client> findOneById(Long id);
+    @Override
+    Optional<Client> findById(Long aLong);
+
+    @Override
+    Client save(Client client);
+
+    @Override
+    Client saveAndFlush(Client client);
 }

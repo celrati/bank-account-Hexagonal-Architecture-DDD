@@ -3,31 +3,34 @@ package com.bankaccount.demo.domain;
 
 import com.bankaccount.demo.domain.dto.ClientDto;
 import com.bankaccount.demo.domain.mappers.ClientMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
 
 
 @Service
-public class DomainClientService {
+@AllArgsConstructor
+@Transactional
+public class DomainClientService implements ClientService {
 
     private final ClientRepository clientRepository;
 
-    @Autowired
-    public DomainClientService(final ClientRepository clientRepository) {
-        this.clientRepository = clientRepository;
-    }
-
-
-    public Long createClient(ClientDto clientDto) {
+    @Override
+    public Client createClient(ClientDto clientDto) {
         Client client = ClientMapper.clientBuild(clientDto);
-        clientRepository.save(client);
-        return client.getId();
+        return clientRepository.save(client);
     }
 
-    private Client getClient(Long id) {
-        return clientRepository
+    @Override
+    public ClientDto getClient(Long id) {
+        Optional<Client> client = Optional.ofNullable(clientRepository
                 .findById(id)
-                .orElseThrow(RuntimeException::new);
+                .orElseThrow(RuntimeException::new));
+
+        return ClientMapper.clientDtoBuild(client.get());
+
     }
 
 }

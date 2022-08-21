@@ -18,4 +18,13 @@ public class ClientMapper {
                 .balance(clientDto.getBalance())
                 .build();
     }
+
+    public ClientDto clientDtoBuild(Client client) {
+        return ClientDto.builder()
+                .id(client.getId())
+                .userName(client.getUserName())
+                .birthDate(client.getBirthDate())
+                .balance(client.getBalance())
+                .build();
+    }
 }

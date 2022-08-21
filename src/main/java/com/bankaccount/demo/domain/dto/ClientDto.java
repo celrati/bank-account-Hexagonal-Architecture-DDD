@@ -14,6 +14,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class ClientDto {
 
+    private Long id;
     private String userName;
     private LocalDate birthDate;
     private double balance;

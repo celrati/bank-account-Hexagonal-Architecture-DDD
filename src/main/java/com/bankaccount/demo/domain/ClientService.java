@@ -5,7 +5,7 @@ import com.bankaccount.demo.domain.dto.ClientDto;
 
 public interface ClientService {
 
-    public String createClient(ClientDto clientDto);
-
+    public Client createClient(ClientDto clientDto);
+    public ClientDto getClient(Long id);
 
 }
