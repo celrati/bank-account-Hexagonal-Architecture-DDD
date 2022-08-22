@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d26675c9-884c-4820-8168-00e293ad9cc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/application/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/application/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/DomainClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/service/DomainClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/entity/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/dto/ClientDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/dto/ClientDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/mappers/ClientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/mappers/ClientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/mappers/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/domain/mappers/TransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/BeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/H2ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/implRepository/H2ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/ImportedClientJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bankaccount/demo/infrastructure/imported/ImportedClientJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bankaccount/demo/domain/DomainClientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bankaccount/demo/domain/DomainClientServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +61,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -58,16 +72,27 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.bankaccount.demo.infrastructure.imported" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.bankaccount.demo.domain.service" />
       <recent name="com.bankaccount.demo.domain" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bankaccount.demo.domain.dto" />
+      <recent name="com.bankaccount.demo.application" />
+      <recent name="com.bankaccount.demo.domain.service" />
+      <recent name="com.bankaccount.demo.infrastructure" />
+      <recent name="com.bankaccount.demo.infrastructure.imported" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="JUnit.DomainTransactionServiceTest">
     <configuration name="DomainClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bankaccount.demo.domain.*" />
+          <option name="PATTERN" value="com.bankaccount.demo.domain.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,33 +103,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DomainClientServiceTest.createClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bankaccount.demo.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bankaccount.demo.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.bankaccount.demo.domain.DomainClientServiceTest" />
-      <option name="METHOD_NAME" value="createClient" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DomainClientServiceTest.createClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bankaccount.demo.domain.*" />
+          <option name="PATTERN" value="com.bankaccount.demo.domain.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.bankaccount.demo.domain" />
       <option name="MAIN_CLASS_NAME" value="com.bankaccount.demo.domain.DomainClientServiceTest" />
       <option name="METHOD_NAME" value="createClientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DomainTransactionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bankaccount.demo.domain.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bankaccount.demo.domain.service" />
+      <option name="MAIN_CLASS_NAME" value="com.bankaccount.demo.domain.service.DomainTransactionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DomainTransactionServiceTest.getTrasactionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bankaccount.demo.domain.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bankaccount.demo.domain.service" />
+      <option name="MAIN_CLASS_NAME" value="com.bankaccount.demo.domain.service.DomainTransactionServiceTest" />
+      <option name="METHOD_NAME" value="getTrasactionsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,10 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DomainTransactionServiceTest" />
+        <item itemvalue="JUnit.DomainTransactionServiceTest.getTrasactionsTest" />
         <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="JUnit.DomainClientServiceTest" />
         <item itemvalue="JUnit.DomainClientServiceTest.createClientTest" />
-        <item itemvalue="JUnit.DomainClientServiceTest.createClient" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660786856358</updated>
-      <workItem from="1660786859192" duration="37670000" />
+      <workItem from="1660786859192" duration="42665000" />
     </task>
     <servers />
   </component>
@@ -167,7 +208,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bankaccount/demo/DemoApplication.java</url>
-          <line>14</line>
+          <line>8</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

@@ -1,6 +1,7 @@
-package com.bankaccount.demo.domain;
+package com.bankaccount.demo.domain.service;
 
 import com.bankaccount.demo.domain.dto.ClientDto;
+import com.bankaccount.demo.domain.entity.Client;
 
 
 public interface ClientService {

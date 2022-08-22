@@ -1,5 +1,6 @@
 package com.bankaccount.demo.domain.dto;
 
+import com.bankaccount.demo.domain.entity.Client;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -9,12 +10,11 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(exclude = "transactionList")
-public class ClientDto {
+@ToString(exclude = "client")
+public class TransactionDto {
 
     private Long id;
-    private String userName;
-    private LocalDate birthDate;
-    private double balance;
+    private Long clientID;
+    private double amount;
 
 }

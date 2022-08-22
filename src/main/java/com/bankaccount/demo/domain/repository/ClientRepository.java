@@ -1,4 +1,6 @@
-package com.bankaccount.demo.domain;
+package com.bankaccount.demo.domain.repository;
+
+import com.bankaccount.demo.domain.entity.Client;
 
 import java.util.Optional;
 

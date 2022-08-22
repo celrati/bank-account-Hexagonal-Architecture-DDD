@@ -1,8 +1,14 @@
-package com.bankaccount.demo.domain;
+package com.bankaccount.demo.domain.service;
 
 
 import com.bankaccount.demo.domain.dto.ClientDto;
+import com.bankaccount.demo.domain.entity.Client;
+import com.bankaccount.demo.domain.entity.Transaction;
 import com.bankaccount.demo.domain.mappers.ClientMapper;
+import com.bankaccount.demo.domain.mappers.TransactionMapper;
+import com.bankaccount.demo.domain.repository.ClientRepository;
+import com.bankaccount.demo.domain.repository.TransactionRepository;
+import com.bankaccount.demo.domain.service.ClientService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +22,8 @@ import java.util.Optional;
 public class DomainClientService implements ClientService {
 
     private final ClientRepository clientRepository;
+    private final TransactionRepository transactionRepository;
+
 
     @Override
     public Client createClient(ClientDto clientDto) {
@@ -34,6 +42,8 @@ public class DomainClientService implements ClientService {
     public Client depositClient(Long id, double amount) {
         Client client = getClientById(id).get();
         client.setBalance(client.getBalance() + amount);
+        Transaction tr = TransactionMapper.transactionBuild(client, amount);
+        transactionRepository.save(tr);
         return clientRepository.save(client);
     }
 
@@ -44,9 +54,13 @@ public class DomainClientService implements ClientService {
             throw new RuntimeException("insufficient balance");
         }
         client.setBalance(client.getBalance() - amount);
+        Transaction tr = TransactionMapper.transactionBuild(client, -amount);
+        transactionRepository.save(tr);
         return clientRepository.save(client);
 
     }
+
+
 
     private Optional<Client> getClientById(Long id) {
         return Optional.ofNullable(clientRepository

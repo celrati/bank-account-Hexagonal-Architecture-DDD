@@ -1,7 +1,6 @@
-package com.bankaccount.demo.infrastructure;
+package com.bankaccount.demo.infrastructure.imported;
 
-import com.bankaccount.demo.domain.Client;
-import org.springframework.data.domain.Example;
+import com.bankaccount.demo.domain.entity.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

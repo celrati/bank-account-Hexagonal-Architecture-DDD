@@ -1,12 +1,10 @@
 package com.bankaccount.demo.application;
 
 
-import com.bankaccount.demo.domain.ClientService;
-import com.bankaccount.demo.domain.DomainClientService;
+import com.bankaccount.demo.domain.service.ClientService;
 import com.bankaccount.demo.domain.dto.ClientDto;
 import com.bankaccount.demo.domain.mappers.ClientMapper;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

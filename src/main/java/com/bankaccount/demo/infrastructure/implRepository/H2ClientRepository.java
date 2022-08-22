@@ -1,12 +1,11 @@
-package com.bankaccount.demo.infrastructure;
+package com.bankaccount.demo.infrastructure.implRepository;
 
-import com.bankaccount.demo.domain.Client;
-import com.bankaccount.demo.domain.ClientRepository;
+import com.bankaccount.demo.domain.entity.Client;
+import com.bankaccount.demo.domain.repository.ClientRepository;
+import com.bankaccount.demo.infrastructure.imported.ImportedClientJpaRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
